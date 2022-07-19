@@ -1,26 +1,33 @@
 <template>
-    <footer>
-        <div class="container" id="container">
-            <div id="contacts">
-                <div id="contacts--contact">
-                    <p>Email: {{ email }}</p>
-                    <p>Cell: {{ cell }}</p>
+    <footer v-if="Me" class="py-2">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-6 my-auto d-inline-block align-content-center">
+                    <div class="text-lg-start">
+                        <p>Cell: {{ Me.cell }}</p>
+                    </div>
+                    <div class="text-lg-start">
+                        <p>Email: {{ Me.email }}</p>
+                    </div>
                 </div>
-                <div id="contacts--social">
-                    <div>
-                        <a href="https://github.com/A-SCharles">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.freecodecamp.org/ascharles">
-                            <i class="fa-brands fa-free-code-camp"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/abdus-samad-charles-51bba5227/">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
+
+                <div class="col-6 mx-auto">
+                    <div class="">
+                        <div class="circle">
+                            <a target="_blank" href="https://github.com/A-SCharles">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="circle">
+                            <a target="_blank" href="https://www.freecodecamp.org/ascharles">
+                                <i class="fa-brands fa-free-code-camp"></i>
+                            </a>
+                        </div>
+                        <div class="circle">
+                            <a target="_blank" href="https://www.linkedin.com/in/abdus-samad-charles-51bba5227/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,11 +42,14 @@
 export default {
     data() {
         return {
-            email: "a.charles.edu@gmail.com",
-            cell: "074 269 5595",
-            year : new Date().getFullYear()
+            year: new Date().getFullYear()
         }
     },
+    computed: {
+        Me() {
+            return this.$store.state.Me
+        }
+    }
 }
 </script>
 
@@ -47,49 +57,22 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 footer {
-    background-color: #292354;
+    background-color: #222e50;
 }
 
-#container {
-    padding-top: 20px;
-    margin-top: 20px;
-    width: 100vw;
-    color: white;
-    background-color: #292354;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.circle {
+    margin: 5px;
 }
 
-#contacts {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-#contacts--contact {
-    text-align: right;
-}
-
-#contacts--social {
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#contacts--social div {
-    height: 30px;
-    width: 30px;
+.circle i {
+    border-radius: 10px;
+    padding: 5px;
     background-color: white;
-    border-radius: 50%;
-}
-
-#contacts i{
-font-size: 30px;
+    font-size: 30px;
 }
 
 #mentions p {
+    color: white;
     font-size: 18px;
 }
 </style>
