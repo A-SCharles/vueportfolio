@@ -5,6 +5,7 @@
   <Skills />
   <Testimonial />
   <Project />
+  <Resume />
   <Contact />
   <Footer1 />
   <!-- <router-view /> -->
@@ -19,6 +20,7 @@ import Project from "./views/project.vue";
 import Contact from "./views/contact.vue";
 import Footer1 from './components/footer.vue';
 import Skills from "./views/skills.vue";
+import Resume from './views/resume.vue';
 
 export default {
   components: {
@@ -29,7 +31,8 @@ export default {
     Contact,
     Testimonial,
     Project,
-    Skills
+    Skills,
+    Resume
 }
 }
 
@@ -56,10 +59,6 @@ body {
   color: #2c3e50;
 }
 
-nav {
-  /* min-height: 15vh; */
-  /* padding: 30px; */
-}
 
 nav a {
   font-weight: bold;

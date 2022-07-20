@@ -2,14 +2,14 @@
     <!-- contact start -->
     <section v-if="Me" id="contact" class="text-black py-5">
         <div class="container">
-            <div class="row ">
+            <div class="row">
                 <h2 class="mb-5 text-center">Looking For Me?</h2>
                 <div class="col-lg-7 my-auto text-center text-lg-start">
 
                     <span class="section-title">Contact me here</span>
 
                     <!-- Contact Form -->
-                    <form id="contact-form" class="form-border pb-5 pe-4 mt-5 fs-5 text-md-start"
+                    <form id="contact-form" class="form-border text-md-start"
                         action="https://formspree.io/f/myyolgzn" method="post">
                         <label class="form-label pt-3" for="name">Name:</label>
                         <input id="name" name="name" type="text" class="form-control py-1" placeholder="Enter Your Name"
@@ -20,7 +20,7 @@
                         <label class="form-label pt-3" for="form-message">How can I Help you?:</label>
                         <textarea id="form-message" name="form-message" class="form-control py-1" rows="4"
                             placeholder="Enter a message" required></textarea>
-                        <button id="submit-btn" class="btn btn-outline-light rounded-3 my-4" type="submit">Send</button>
+                        <button id="submit-btn" class="btn btn-outline-primary rounded-3 my-4" type="submit">Send</button>
                     </form>
                     <!-- Contact Form end -->
                 </div>

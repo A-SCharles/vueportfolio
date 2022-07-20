@@ -1,6 +1,6 @@
 <template>
     <div v-for="project in Projects" :key="project" class="card mx-auto m-3">
-        <img :src="project.img" class="card-img-top img-fluid">
+        <img :src="project.img" class="img-fluid">
         <div class="btn-center d-flex justify-content-center align-content-center flex-column">
             <h5 class="card-title">{{ project.name }}</h5>
             <div>
@@ -31,10 +31,12 @@ export default {
     transition: 0.8s;
     color: white;
     position: relative;
+    background-color: black;
 }
 
 .card img {
     /* object-fit: cover; */
+    width: 100% !important;
     transition: 0.8s;
     background-color: black;
 }
@@ -51,21 +53,11 @@ export default {
     opacity: 0;
 }
 
-.card:hover {
-    /* background-image: linear-gradient(#333, black); */
-    background-color: black;
-    z-index: 1;
-    box-shadow: black 5px 5px 10px 1px;
-}
-
-.card:hover img {
+.card:hover>:not(.btn-center){
     filter: blur(7px);
-    /* filter: ; */
-}
+ }
 
 .card:hover .btn-center {
-    /* transform: translateX(50%); */
-    /* transition: transform 0.5s, opacity 0.9s; */
     opacity: 1;
 }
 </style>

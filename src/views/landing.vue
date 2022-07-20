@@ -2,13 +2,13 @@
   <div id="landing" class="vh-100">
     <div v-if="Me" class="container text-white">
       <div class="row d-flex justify-content-center align-content-center">
-        <div class="col-7 my-auto text-center">
+        <div class="col-md-7 order-last my-auto text-center">
           <h2>Ayo, I am {{ Me.name }}</h2>
           <h3><i>An aspiring full stack developer</i></h3>
-          <button class="btn btn-outline-light mx-2">View my work</button>
-          <button class="btn btn-outline-light mx-2">Contact Me</button>
+          <a href="#project" class="btn btn-outline-light mx-2">View my work</a>
+          <a href="#contact" class="btn btn-outline-light mx-2">Contact Me</a>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 order-md-last order-first">
           <img class="img-fluid rounded-5" :src="Me.logo" alt="">
         </div>
       </div>

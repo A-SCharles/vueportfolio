@@ -28,6 +28,7 @@
                             <li><a class="dropdown-item" href="#skills">Skills</a></li>
                             <li><a class="dropdown-item" href="#testimonial">Testimonials</a></li>
                             <li><a class="dropdown-item" href="#project">Projects</a></li>
+                            <li><a class="dropdown-item" href="#resume  ">Resumè</a></li>
                         </ul>
                     </li>
                     <!-- DROPDOWN  -->

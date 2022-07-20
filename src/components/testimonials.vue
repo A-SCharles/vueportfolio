@@ -1,10 +1,10 @@
 <template>
     <div v-for="testimonial in Testimonials" :key="testimonial" class="card p-1 m-5 mx-auto">
         <div class="row">
-            <div class="col-3 my-auto">
-                <img :src="testimonial.img" class="img-fluid rounded-2" alt="...">
+            <div class="col-md-3 my-auto">
+                <img :src="testimonial.img" class="img-fluid rounded-2 mb-3" alt="...">
             </div>
-            <div class="col-8 my-auto text-start">
+            <div class="col-md-8 my-auto text-start">
                 <h5 class="card-title text-center">{{ testimonial.name }}</h5>
                 <hr>
                 <p class="card-text">{{ testimonial.testimonial }}</p>
