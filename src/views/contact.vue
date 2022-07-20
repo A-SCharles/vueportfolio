@@ -1,6 +1,6 @@
 <template>
     <!-- contact start -->
-    <section v-if="Me" id="contact" class="vh-100 text-white py-5">
+    <section v-if="Me" id="contact" class="text-black py-5">
         <div class="container">
             <div class="row ">
                 <h2 class="mb-5 text-center">Looking For Me?</h2>
@@ -89,7 +89,7 @@ export default {
 
 #contact {
     /* min-height: 100vh; */
-    background-color: #007991;
+    /* background-color: #007991; */
     scroll-margin: 50px;
 }
 

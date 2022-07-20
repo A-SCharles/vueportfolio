@@ -10,6 +10,7 @@ export default createStore({
         "I am an honest, hard-working, punctual, reliable, patient and confident person with good leadership skills. I am also a good team player.I studied IT at College of Cape-Town for 3 years, I completed the course in 2021, I have a responsive web design certification which can be viewed here. Prior to my IT NCV level 4 certification, I completed the memorization of the Qur'an after 4 years at Madrasatun'Nur, I also have a Level 2 mechanical engineering certification. At a young age I've always been passionate about breaking things and putting them back together, I do not know why, It was just exciting to me. When I first started, I had no idea how to program or do anything technical, but because of my excellent teachers I slowly started to learn how to do it, I became good at it and began to develop a passion for it. Now I find myself eager to learn more about the vast world of Software Development. While studying IT at the College of Cape Town, I found my passion for the tech industry.",
       email: "a.charles.edu@gmail.com",
       cell: "074 269 5595",
+      location: "Cape Town, South Africa" 
     },
 
     testimonials: [
@@ -49,6 +50,31 @@ export default createStore({
           "Abdus-Samad is a great individual in terms of his hard work, dedication and is always willing to help others in need. He is a honest person, good team player and a true leader.",
       },
     ],
+    projects: [{
+    name: "My First Digital Portfolio",
+    desc: "The first ever digital portfolio I created.",
+    img: "https://i.postimg.cc/9Fwvm3Gp/firstport.png",
+    github: "https://github.com/A-SCharles/myfirstportfolio",
+    live: "https://fccfirstportfolio.netlify.app/",
+    category: "HTML/CSS"
+    },
+    {
+      name: "Auto Shop Landing Page",
+      desc: "An example of a landing page for an auto shop.",
+      img: "https://i.postimg.cc/wMC4yvhk/prodland.png",
+      github: "https://github.com/A-SCharles/ProductLand",
+      live: "https://fccprodland.netlify.app/",
+      category: "HTML/CSS"
+      },
+    {
+      name: "PC Technical Document",
+      desc: "A Technical Document on how to build a PC",
+      img: "https://i.postimg.cc/7YCy5JyS/fcctech.png",
+      github: "https://github.com/A-SCharles/TechnicalDoc",
+      live: "https://fcctechnicaldoc.netlify.app",
+      category: "HTML/CSS"
+      }
+  ],
     Colors: {
       space_cadet: "222e50",
       teal_blue: "007991",

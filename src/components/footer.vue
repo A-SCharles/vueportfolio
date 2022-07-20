@@ -1,7 +1,7 @@
 <template>
     <footer v-if="Me" class="py-2">
         <div class="container">
-            <div class="row text-white">
+            <div class="row">
                 <div class="col-6 my-auto d-inline-block align-content-center">
                     <div class="text-lg-start">
                         <p>Cell: {{ Me.cell }}</p>
@@ -57,7 +57,8 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 footer {
-    background-color: #222e50;
+    color: #333;
+    /* background-color: #e9d985; */
 }
 
 .circle {
@@ -67,12 +68,13 @@ footer {
 .circle i {
     border-radius: 10px;
     padding: 5px;
-    background-color: white;
+    background-color: #222e50;
     font-size: 30px;
+    color: white;
 }
 
 #mentions p {
-    color: white;
+    color: #333;
     font-size: 18px;
 }
 </style>

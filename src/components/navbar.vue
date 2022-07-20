@@ -46,9 +46,6 @@ export default {
 </script>
 
 <style scoped>
-nav {
-    background-color: #222e50;
-}
 
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
