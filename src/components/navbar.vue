@@ -8,7 +8,7 @@
                 </a>
                     <img src="https://i.postimg.cc/x8w6tG9m/navLogo.png" alt="" width="45" height="45">
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,6 +47,11 @@ export default {
 </script>
 
 <style scoped>
+nav {
+    /* background-color: #222e50; */
+    background-image: linear-gradient(#222e50, #00799178, #e9d88500);
+}
+
 
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {

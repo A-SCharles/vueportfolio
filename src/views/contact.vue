@@ -25,7 +25,7 @@
                     <!-- Contact Form end -->
                 </div>
 
-                <div class="my-auto col-lg-4 col-sm-6 text-center text-lg-start ms-auto">
+                <div class="my-auto col-lg-4 col-sm-6 text-center text-lg-start mx-auto">
                     <span class="mb-5 section-title">Also, find me at these places</span>
                     <div class="contact-links">
 
@@ -95,5 +95,12 @@ export default {
 
 #contact a {
     color: #e9d985;
+}
+
+#contact ul li a {
+    font-size: 1.50em;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
 }
 </style>

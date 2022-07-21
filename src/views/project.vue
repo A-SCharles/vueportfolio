@@ -1,7 +1,7 @@
 <template>
     <section id="project">
-        <h1>I am project page</h1>
-        <div class="container">
+        <div class="container p-5">
+            <h2>Projects</h2>
             <div class="row">
                 <div class="d-inline-block">
                     <button class="btn fs-4 btn-outline-warning m-1 px-5">All</button>
