@@ -1,6 +1,6 @@
 <template>
     <div v-for="testimonial in Testimonials" :key="testimonial" class="card p-1 m-5 mx-auto">
-        <div class="row">
+        <div class="row" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500" >
             <div class="col-md-3 my-auto">
                 <img :src="testimonial.img" class="img-fluid rounded-2 mb-3" alt="...">
             </div>
@@ -15,13 +15,17 @@
 </template>
 
 <script>
-
+import AOS from 'aos'
 export default {
     computed: {
         Testimonials() {
             return this.$store.state.testimonials
         }
     },
+
+      mounted() {
+    AOS.init();
+  },
 }
 </script>
 

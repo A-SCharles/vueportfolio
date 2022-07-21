@@ -44,6 +44,12 @@ export default createStore({
         img: "https://i.postimg.cc/zDMdny55/Saleem.png",
         testimonial: "Abdus-Samad is a great individual in terms of his hard work, dedication and is always willing to help others in need. He is a honest person, good team player and a true leader.",
       },
+      {
+        name: "Clayton Adonis",
+        position: "Colleague",
+        img: "https://i.postimg.cc/Sshmf4V4/clayton.jpg",
+        testimonial: "Charles is really passionate about programming and works hard to ensure that his projects are the best they can be",
+      },
     ],
     projects: [{
         name: "My First Digital Portfolio",

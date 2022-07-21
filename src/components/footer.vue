@@ -4,33 +4,50 @@
             <div class="row">
                 <div class="col-md-4 my-auto mx-auto">
                     <h1>{{ Me.name }}</h1>
-                    <p class="footer-links fs-5 d-inline-block mx-auto">
-					<a href="#" class="link-1">Home</a>
-					
-					<a href="#">Blog</a>
-				
-					<a href="#">Pricing</a>
-				
-					<a href="#">About</a>
-					
-					<a href="#">Faq</a>
-					
-					<a href="#">Contact</a>
-				</p>
-                </div>
-                <div class="col-md-4 my-auto">
-                    <p>
-                        <span class="fa fa-envelope-o text-black fs-4"> </span> {{ Me.email }}
-                    </p>
-                    <p>
-                        <span class="fa fa-user-circle-o text-black fs-4"> </span> {{ Me.cell }}
-                    </p>
-                    <p>
-                        <span class="fa fa-map-marker text-black fs-4"> </span> {{ Me.location }}
+                    <p class="row footer-links d-lg-inline-block fs-5 mx-auto">
+                        <a href="#about" class="link-1">About</a>
+
+                        <a href="#project">Projects</a>
+                    <!-- </p>
+
+                    <p class="col-md-6 footer-links fs-5 mx-auto"> -->
+                        <a href="#resume">Resumè</a>
+
+                        <a href="#contact">Contact</a>
                     </p>
                 </div>
+                <div class="col-md-4 my-auto flex-row">
+                    <div>
+                        <i class="fa fa-envelope-o text-black fs-4"> </i>
+                        <p>
+                            <span>{{ Me.email }}</span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-user-circle-o text-black fs-4"> </i>
+                        <p>
+                            <span>
+                                {{ Me.cell }}
+                            </span>
+                        </p>
+                    </div>
+
+                    <div>
+
+                    </div>
+                    <i class="fa fa-map-marker text-black fs-4"> </i>
+                    <p>
+                        <span>
+                            {{ Me.location }}
+                        </span>
+                    </p>
+                </div>
                 <div class="col-md-4 my-auto">
-                    <div class="d-inline-block rounded-5">
+                    <div class="d-inline-block rounded-5 text-end">
+                        <a href="https://codepen.io/AsC_Squirtle" target="_blank">
+                            <i class="fa fa-codepen mx-2"></i>
+                        </a>
                         <a target="_blank" href="https://github.com/A-SCharles">
                             <i class="fa-brands fa-github mx-2"></i>
                         </a>
@@ -42,11 +59,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="row mx-auto">
+                <div class="row text-end">
+                    <hr>
                     <p>
-
+                        &copy;{{ Me.name }} {{ year }}
                     </p>
-                    &copy;{{ Me.name }} {{ year }}
                 </div>
             </div>
         </div>
@@ -114,17 +131,47 @@ footer {
 
 i {
     font-size: 40px;
-    color: white;
+    color: #333;
+}
+
+a {
+    color: #333;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #0077b5
+}
+
+.fa, .fa-brands{
+    transition: 0.5s;
+}
+
+.fa-codepen:hover {
+    color: #34a65f;
+}
+
+.fa-free-code-camp:hover {
+    color: green;
+}
+
+.fa-github:hover {
+    color: #222e50;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
 }
 
 .footer-links a:before {
-  content: "|";
-  padding-left: 10px;
-  padding-right: 10px;
-}
+    content: "|";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    }
 
 .footer-links .link-1:before {
-  content: none;
+    content: none;
 }
 
 

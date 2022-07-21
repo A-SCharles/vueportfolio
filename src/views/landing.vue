@@ -3,7 +3,7 @@
     <div v-if="Me" class="container text-white">
       <div class="row d-flex justify-content-center align-content-center">
         <div class="col-md-7 order-last my-auto text-center">
-          <h2>Ayo, I am {{ Me.name }}</h2>
+          <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Ayo, I am {{ Me.name }}</h2>
           <h3><i>An aspiring full stack developer</i></h3>
           <a href="#project" class="btn btn-outline-light mx-2">View my work</a>
           <a href="#contact" class="btn btn-outline-light mx-2">Contact Me</a>
@@ -17,7 +17,11 @@
 </template>
 
 <script>
+import AOS from 'aos'
 export default {
+  mounted() {
+    AOS.init();
+  },
   computed: {
     Me() {
       return this.$store.state.Me
