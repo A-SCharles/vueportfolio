@@ -19,6 +19,7 @@ export default {
 <style>
 #testimonial {
     min-height: 100vh;
+    scroll-margin: 70px;
 }
 
 #testimonial  {

@@ -2,7 +2,7 @@
   <section id="skills">
     <div v-if="Skills">
       <div class="container">
-        <h2>My Skills</h2>
+        <h2 data-aos="fade-down" data-aos-duration="3000">My Skills</h2>
 
         <div class="row mx-auto">
           <div
@@ -16,6 +16,25 @@
         </div>
       </div>
     </div>
+
+    <!-- <div v-if="Skills">
+      <div class="container">
+        <h2 data-aos="fade-down" data-aos-duration="3000">My Skills</h2>
+
+        <div class="row mx-auto">
+          <div
+            v-for="skill in Skills"
+            :key="skill"
+            class="card mx-auto border-0 bg-transparent p-2 m-2"
+          >
+            <img :src="skill.icon" alt="" />
+            <h4 class="my-1">{{ skill.name }}</h4>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
   </section>
 </template>
 
@@ -32,6 +51,7 @@ export default {
 <style scoped>
 #skills {
   min-height: 100vh;
+  scroll-margin: 100px
 }
 
 .card {

@@ -4,11 +4,11 @@
             <div class="row">
                 <div class="col-md-4 my-auto mx-auto">
                     <h1>{{ Me.name }}</h1>
-                    <p class="row footer-links d-lg-inline-block fs-5 mx-auto">
+                    <p class="row footer-links d-lg-inline-block fs-5">
                         <a href="#about" class="link-1">About</a>
 
                         <a href="#project">Projects</a>
-                    <!-- </p>
+                        <!-- </p>
 
                     <p class="col-md-6 footer-links fs-5 mx-auto"> -->
                         <a href="#resume">Resumè</a>
@@ -67,42 +67,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-6 my-auto d-inline-block align-content-center">
-                    <div class="text-lg-start">
-                        <p>Cell: {{ Me.cell }}</p>
-                    </div>
-                    <div class="text-lg-start">
-                        <p>Email: {{ Me.email }}</p>
-                    </div>
-                </div>
-
-                <div class="col-6 mx-auto">
-                    <div class="">
-                        <div class="circle">
-                            <a target="_blank" href="https://github.com/A-SCharles">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                        <div class="circle">
-                            <a target="_blank" href="https://www.freecodecamp.org/ascharles">
-                                <i class="fa-brands fa-free-code-camp"></i>
-                            </a>
-                        </div>
-                        <div class="circle">
-                            <a target="_blank" href="https://www.linkedin.com/in/abdus-samad-charles-51bba5227/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="mentions">
-                <p>&copy;Abdus-Samad Charles {{ year }}</p>
-            </div>
-        </div> -->
     </footer>
 </template>
 
@@ -139,13 +103,15 @@ i {
 a {
     color: #333;
     transition: 0.5s;
+    padding: 0;
 }
 
 a:hover {
     color: #0077b5
 }
 
-.fa, .fa-brands{
+.fa,
+.fa-brands {
     transition: 0.5s;
 }
 
@@ -167,11 +133,11 @@ a:hover {
 
 .footer-links a:before {
     content: "|";
-    /* padding-left: 10px; */
+    padding-left: 10px;
     padding-right: 10px;
     color: white;
     text-decoration: none;
-    }
+}
 
 .footer-links .link-1:before {
     content: none;

@@ -3,14 +3,15 @@
     <section v-if="Me" id="contact" class="text-black py-5">
         <div class="container">
             <div class="row">
-                <h2 class="mb-5 text-center">Looking For Me?</h2>
+                <h2 data-aos="fade-down" data-aos-duration="3000" class="mb-5 text-center">Looking For Me?</h2>
                 <div class="col-lg-12 my-auto text-center text-lg-start">
 
-                    <p class="text-lg-center">Contact me here</p>
 
                     <!-- Contact Form -->
-                    <form id="contact-form" class="form-border mx-auto w-50 text-md-start"
-                        action="https://formspree.io/f/myyolgzn" method="post">
+                    <form data-aos="zoom-out" data-aos-duration="3000"
+                        class="form-border p-3 mx-auto w-50 text-md-start" action="https://formspree.io/f/myyolgzn"
+                        method="post">
+                        <h3 class="text-lg-center">Contact me here</h3>
                         <label class="form-label pt-3" for="name">Name:</label>
                         <input name="name" type="text" class="form-control py-1" placeholder="Enter Your Name" required>
                         <label class="form-label pt-3" for="email">Your Email Address:</label>
@@ -19,46 +20,10 @@
                         <label class="form-label pt-3" for="form-message">How can I Help you?:</label>
                         <textarea name="form-message" class="form-control py-1" rows="4" placeholder="Enter a message"
                             required></textarea>
-                        <button class="btn btn-outline-primary rounded-3 my-4" type="submit">Send</button>
+                        <button class="btn btn-outline-dark rounded-3 my-4" type="submit">Send</button>
                     </form>
                     <!-- Contact Form end -->
                 </div>
-
-                <!-- <div class="my-auto col-lg-4 col-sm-6 text-center text-lg-start mx-auto">
-                    <span class="mb-5 section-title">Also, find me at these places</span>
-                    <div class="contact-links">
-
-                        <ul class="list-unstyled">
-                            <li class="my-5">
-                                <a id="profile-link" href="https://codepen.io/AsC_Squirtle" target="_blank">
-                                    <i class="fa fa-codepen"></i>
-                                    Codepen
-                                </a>
-                            </li>
-
-                            <li class="my-5">
-                                <a id="profile-link" href="https://www.freecodecamp.org/ASCharles" target="_blank">
-                                    <i class="fa fa-free-code-camp"></i>
-                                    FreeCodeCamp
-                                </a>
-                            </li>
-
-                            <li class="my-5">
-                                <a id="profile-link" href="https://github.com/A-SCharles" target="_blank">
-                                    <i class="fa fa-github-square"></i>
-                                    Github
-                                </a>
-                            </li>
-                            <li class="my-5">
-                                <a href="https://za.linkedin.com/in/abdus-samad-charles-51bba5227?trk=people-guest_people_search-card"
-                                    target="_blank">
-                                    <i class="fa fa-linkedin"></i>
-                                    LinkedIn
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -97,5 +62,10 @@ export default {
     color: white;
     text-decoration: none;
     transition: .5s;
+}
+
+.form-border {
+    border-radius: 5px;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.8);
 }
 </style>

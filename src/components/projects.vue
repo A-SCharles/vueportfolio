@@ -1,5 +1,6 @@
 <template>
-    <div v-for="project in Projects" :key="project" class="card mx-auto m-3">
+    <div v-for="project in Projects" :key="project" 
+    data-aos="zoom-in" data-aos-duration="3000" class="card mx-auto m-3">
         <img :src="project.img" class="img-fluid my-auto">
         <div class="btn-center d-flex justify-content-center align-content-center flex-column">
             <h5 class="card-title">{{ project.name }}</h5>
@@ -16,22 +17,31 @@
 </template>
 
 <script>
+import AOS from 'aos'
 export default {
     computed: {
         Projects() {
             return this.$store.state.projects
         }
     },
+          mounted() {
+    AOS.init();
+  },
 }
 </script>
 
 <style scoped>
+#projects {
+    scroll-margin: 50px;
+}
+
 .card {
-    width: 300px;
+    width: 350px;
     transition: 0.8s;
     color: white;
     position: relative;
     background-color: black;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.8);
 }
 
 .card img {
@@ -53,9 +63,9 @@ export default {
     opacity: 0;
 }
 
-.card:hover>:not(.btn-center){
+.card:hover>:not(.btn-center) {
     filter: blur(7px) grayscale(100) opacity(.4);
- }
+}
 
 .card:hover .btn-center {
     opacity: 1;

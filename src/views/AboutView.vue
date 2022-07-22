@@ -1,9 +1,11 @@
 <template>
   <div id="about" class="container text-white py-2" v-if="Me">
-    <h1>Who Am I ?</h1>
+      <div class="row">
+        <h1 data-aos="fade-down" data-aos-duration="5000" class="col-md-12 py-5 text-center">Who Am I ?</h1>
+      </div>
     <div class="row text-center">
-      <div class="col-md-5 order-first my-auto">
-        <img :src="Me.logo" class="img-fluid rounded-5" alt="">
+      <div class="col-md-5 order-first">
+        <img :src="Me.headshot" class="img-fluid rounded-5" alt="">
       </div>
       <div class="col-md-7 col-sm-12 my-auto text-center text-lg-start">
         <h3>Hi, I am <span class="border-bottom border-warning border-3">{{ Me.name }}</span></h3>
