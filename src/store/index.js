@@ -57,7 +57,7 @@ export default createStore({
         img: "https://i.postimg.cc/9Fwvm3Gp/firstport.png",
         github: "https://github.com/A-SCharles/myfirstportfolio",
         live: "https://fccfirstportfolio.netlify.app/",
-        category: "HTML/CSS"
+        category: "HTML / CSS"
       },
       {
         name: "Auto Shop Landing Page",
@@ -65,7 +65,7 @@ export default createStore({
         img: "https://i.postimg.cc/wMC4yvhk/prodland.png",
         github: "https://github.com/A-SCharles/ProductLand",
         live: "https://fccprodland.netlify.app/",
-        category: "HTML/CSS"
+        category: "HTML / CSS"
       },
       {
         name: "PC Technical Document",
@@ -73,8 +73,40 @@ export default createStore({
         img: "https://i.postimg.cc/7YCy5JyS/fcctech.png",
         github: "https://github.com/A-SCharles/TechnicalDoc",
         live: "https://fcctechnicaldoc.netlify.app",
-        category: "HTML/CSS"
-      }
+        category: "HTML / CSS"
+      },
+      {
+        name: "Property Listing Website",
+        desc: "A website where a user is able to view properties",
+        img: "https://i.postimg.cc/zGHGBWbX/image-3.png",
+        github: "https://github.com/A-SCharles/propertyList",
+        live: "https://asc-property-list.netlify.app/",
+        category: "Vue"
+      },
+      {
+        name: "To Do list",
+        desc: "A to do list web application",
+        img: "https://i.postimg.cc/26rk2KHV/image.png",
+        github: "https://github.com/A-SCharles/toDoList",
+        live: "https://asc-todoapp.netlify.app/",
+        category: "Javascript"
+      },
+      {
+        name: "Random User Generator",
+        desc: "A web app that generates random users via an API",
+        img: "https://i.postimg.cc/769xcncX/image-2.png",
+        github: "https://github.com/A-SCharles/RandomUserGenerator",
+        live: "https://asc-rug.netlify.app",
+        category: "Javascript"
+      },
+      {
+        name: "Javascript Calculator",
+        desc: "A normal calculator built using JAvascript",
+        img: "https://i.postimg.cc/8C8Pr5Md/image-1.png",
+        github: "https://github.com/A-SCharles/JS_Calc",
+        live: "https://asc-calculator.netlify.app",
+        category: "Javascript"
+      },
     ],
     skills: [{
         name: "HTML",

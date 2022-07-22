@@ -1,23 +1,23 @@
 <template>
   <section id="resume">
     <div class="container">
-      <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">  Resumè</h2>
+      <h2 data-aos="fade-down" data-aos-duration="3000">Resumè</h2>
       <div class="row">
         <!-- edu -->
-        <div class="col-md-6 text-start" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500">
-          <h3 class="py-3 my-3">My Education</h3>
-          <div v-for="edu in Resume.education" :key="edu" class="">
-            <h3>{{ edu.name }}</h3>
+        <div class="col-md-6 text-start">
+          <h3  data-aos="fade-down" data-aos-duration="3000" class="py-3 my-3">My Education</h3>
+          <div v-for="edu in Resume.education" :key="edu" data-aos="fade-right" data-aos-duration="3000">
+            <h4>{{ edu.name }}</h4>
             <a target="_blank" :href="edu.link">{{ edu.place }}</a>
             <p class="text-muted">{{ edu.duration }}</p>
             <hr>
           </div>
         </div>
         <!-- work -->
-        <div class="col-md-6 text-start" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500">
-          <h3 class="py-3 my-3">My Work Experience</h3>
-          <div v-for="work in Resume.experience" :key="work" class="">
-            <h3>{{ work.position }}</h3>
+        <div class="col-md-6 text-start">
+          <h3 data-aos="fade-down" data-aos-duration="3000" class="py-3 my-3">My Work Experience</h3>
+          <div v-for="work in Resume.experience" :key="work" data-aos="fade-left" data-aos-duration="3000">
+            <h4>{{ work.position }}</h4>
             <a target="_blank" :href="work.link">{{ work.place }}</a>
             <p class="text-muted">{{ work.duration }}</p>
             <hr>
@@ -43,5 +43,30 @@ export default {
 #resume {
   /* min-height: 100vh; */
   scroll-margin: 100px;
+    overflow-x: hidden !important;
 }
+
+#resume a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration-color: #e9d985; 
+}
+
+a:hover {
+  color: #007991 !important ;
+}
+
+h3 {
+      font-family: 'Cardo', serif;
+    text-decoration: underline;
+    text-decoration-color: #e9d985;
+    font-weight: 900
+}
+
+h4 {
+  font-size: 25px;
+font-family: 'Cardo', serif;
+    text-decoration: underline;
+    text-decoration-color: #e9d985;}
 </style>

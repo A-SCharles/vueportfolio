@@ -1,11 +1,11 @@
 <template>
   <Navbar />
-  <landing />
-  <AboutView />
+  <landing /> 
+  <AboutView /> 
   <Skills />
   <Testimonial />
   <Project />
-  <Resume />
+  <Resume /> 
   <Contact />
   <Footer1 />
   <!-- <router-view /> -->
@@ -13,14 +13,14 @@
 
 <script>
 import Navbar from "./components/navbar.vue";
-import Landing from './views/landing.vue';
-import AboutView from './views/AboutView.vue';
+import Landing from "./views/landing.vue";
+import AboutView from "./views/AboutView.vue";
 import Testimonial from "./views/testimonial.vue";
 import Project from "./views/project.vue";
 import Contact from "./views/contact.vue";
-import Footer1 from './components/footer.vue';
+import Footer1 from "./components/footer.vue";
 import Skills from "./views/skills.vue";
-import Resume from './views/resume.vue';
+import Resume from "./views/resume.vue";
 
 export default {
   components: {
@@ -32,10 +32,9 @@ export default {
     Testimonial,
     Project,
     Skills,
-    Resume
-}
-}
-
+    Resume,
+  },
+};
 </script>
 
 <style>
@@ -45,10 +44,27 @@ export default {
   --flax: #e9d985;
 }
 
+*{ 
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  overflow-x: hidden !important;
   /* background-image: linear-gradient(180deg, var(--teal_blue, var(--space_cadet, var(--flax)))) !important; */
-  background-image: linear-gradient(180deg, #222e50, #007991, #e9d985) !important;
+  background-image: linear-gradient(
+    180deg,
+    #222e50,
+    #007991,
+    #e9d985
+  ) !important;
+    overflow-x: hidden !important;
+    /* overflow-y: auto !important; */
+}
+
+h2,
+h3,
+h4 {
+  color: white;
 }
 
 #app {
@@ -58,7 +74,6 @@ body {
   text-align: center;
   color: #2c3e50;
 }
-
 
 nav a {
   font-weight: bold;

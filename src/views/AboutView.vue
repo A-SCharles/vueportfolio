@@ -5,21 +5,24 @@
       <div class="col-md-5 order-first my-auto">
         <img :src="Me.logo" class="img-fluid rounded-5" alt="">
       </div>
-      <div class="col-md-6 col-sm-12 my-auto text-center text-lg-start">
+      <div class="col-md-7 col-sm-12 my-auto text-center text-lg-start">
         <h3>Hi, I am <span class="border-bottom border-warning border-3">{{ Me.name }}</span></h3>
         <p>{{ Me.about }}</p>
         <div class="row my-5">
           <div class="col-lg-4 col-12 text-start">
+            <p class="text-white-50 fs-3">Email: </p>
             <p>
               <span class="fa fa-envelope-o text-black fs-4"> </span> {{ Me.email }}
             </p>
           </div>
-          <div class="col-lg-4 col-12 text-center text-sm-start">
+          <div class="col-lg-4 col-12 text-start text-lg-center">
+            <p class=" text-white-50 fs-3">Cell: </p>
             <p>
               <span class="fa fa-user-circle-o text-black fs-4"> </span> {{ Me.cell }}
             </p>
           </div>
           <div class="col-lg-4 col-12 text-start">
+            <p class="text-white-50 fs-3">Location: </p>
             <p>
               <span class="fa fa-map-marker text-black fs-4"> </span> {{ Me.location }}
             </p>

@@ -1,6 +1,6 @@
 <template>
     <div v-for="project in Projects" :key="project" class="card mx-auto m-3">
-        <img :src="project.img" class="img-fluid">
+        <img :src="project.img" class="img-fluid my-auto">
         <div class="btn-center d-flex justify-content-center align-content-center flex-column">
             <h5 class="card-title">{{ project.name }}</h5>
             <div>
@@ -54,7 +54,7 @@ export default {
 }
 
 .card:hover>:not(.btn-center){
-    filter: blur(7px);
+    filter: blur(7px) grayscale(100) opacity(.4);
  }
 
 .card:hover .btn-center {

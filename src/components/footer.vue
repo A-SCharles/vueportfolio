@@ -125,6 +125,8 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 footer {
+    overflow-x: hidden !important;
+
     color: #333;
     /* background-color: #e9d985; */
 }
@@ -165,9 +167,10 @@ a:hover {
 
 .footer-links a:before {
     content: "|";
-    padding-left: 10px;
+    /* padding-left: 10px; */
     padding-right: 10px;
     color: white;
+    text-decoration: none;
     }
 
 .footer-links .link-1:before {

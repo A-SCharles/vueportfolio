@@ -1,6 +1,6 @@
 <template>
     <section id="testimonial" class="container">
-        <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Testimonials</h2>
+        <h2 data-aos="fade-down" data-aos-duration="3000">Testimonials</h2>
         <div class="row mx-auto ">
                 <Testimonials />
         </div>
@@ -18,6 +18,10 @@ export default {
 
 <style>
 #testimonial {
+    min-height: 100vh;
+}
+
+#testimonial  {
     min-height: 100vh;
 }
 </style>
