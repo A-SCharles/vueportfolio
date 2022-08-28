@@ -1,4 +1,5 @@
 <template>
+<div id="test"></div>
   <section id="resume">
     <div class="container">
       <h2 data-aos="fade-down" data-aos-duration="3000">Resumè</h2>
@@ -36,14 +37,20 @@ export default {
       return this.$store.state.Resume;
     },
   },
+  mounted() {
+    AOS.init();
+  },
 };
 </script>
 
 <style scoped>
+#test {
+  scroll-margin-block-start: 70px;
+}
+
 #resume {
   /* min-height: 100vh; */
   overflow-x: hidden !important;
-  scroll-margin: 100px;
 }
 
 #resume a {

@@ -17,22 +17,22 @@ import Landing from "./views/landing.vue";
 import AboutView from "./views/AboutView.vue";
 import Testimonial from "./views/testimonial.vue";
 import Project from "./views/project.vue";
-import Contact from "./views/contact.vue";
-import Footer1 from "./components/footer.vue";
 import Skills from "./views/skills.vue";
 import Resume from "./views/resume.vue";
+import Contact from "./views/contact.vue";
+import Footer1 from "./components/footer.vue";
 
 export default {
   components: {
     Navbar,
     Landing,
     AboutView,
-    Footer1,
-    Contact,
     Testimonial,
     Project,
     Skills,
     Resume,
+    Contact,
+    Footer1,
   },
 };
 </script>

@@ -5,25 +5,25 @@
       </div>
     <div class="row text-center">
       <div class="col-md-5 order-first">
-        <img :src="Me.headshot" class="img-fluid rounded-5" alt="">
+        <img data-aos="zoom-in" data-aos-duration="3000" :src="Me.headshot" class="img-fluid rounded-5 my-auto" alt="">
       </div>
       <div class="col-md-7 col-sm-12 my-auto text-center text-lg-start">
         <h3>Hi, I am <span class="border-bottom border-warning border-3">{{ Me.name }}</span></h3>
-        <p>{{ Me.about }}</p>
+        <p class="fs-5">{{ Me.about }}</p>
         <div class="row my-5">
-          <div class="col-lg-4 col-12 text-start">
+          <div data-aos="fade-up" data-aos-duration="3000" class="col-lg-4 col-12 text-start">
             <p class="text-white-50 fs-3">Email: </p>
             <p>
               <span class="fa fa-envelope-o text-black fs-4"> </span> {{ Me.email }}
             </p>
           </div>
-          <div class="col-lg-4 col-12 text-start text-lg-center">
+          <div data-aos="fade-up" data-aos-duration="3000" class="col-lg-4 col-12 text-start text-lg-center">
             <p class=" text-white-50 fs-3">Cell: </p>
             <p>
               <span class="fa fa-user-circle-o text-black fs-4"> </span> {{ Me.cell }}
             </p>
           </div>
-          <div class="col-lg-4 col-12 text-start">
+          <div data-aos="fade-up" data-aos-duration="3000" class="col-lg-4 col-12 text-start">
             <p class="text-white-50 fs-3">Location: </p>
             <p>
               <span class="fa fa-map-marker text-black fs-4"> </span> {{ Me.location }}
@@ -49,6 +49,7 @@ export default {
 #about {
   min-height: 100vh;
   scroll-margin: 100px;
+  overflow-x: hidden;
 }
 
 #about img {

@@ -107,6 +107,14 @@ export default createStore({
         live: "https://asc-calculator.netlify.app",
         category: "Javascript"
       },
+      {
+        name: "Unholy Season",
+        desc: "A site where you can view horror animes",
+        img: "https://i.postimg.cc/Hk5jm0t0/image.png",
+        github: "https://github.com/A-SCharles/UnholySeason",
+        live: "https://unholyseason-3ff41.web.app/",
+        category: "Vue"
+      },
     ],
     skills: [{
         name: "HTML",
@@ -138,7 +146,18 @@ export default createStore({
       },
       {
         name: "MySQL",
+        // icon: "https://i.postimg.cc/rFqDSZ5D/logo-mysql-26353.png"
+        // icon: "https://i.postimg.cc/rFqDSZ5D/logo-mysql-26353.png"
+        // icon: "https://i.postimg.cc/TwHW1d5n/My-SQL-512.png"
         icon: "https://i.postimg.cc/NMwZ6pPn/1012821-code-development-logo-mysql-icon.png"
+      },
+      {
+        name: "Javascript",
+        icon: "https://i.postimg.cc/GptL2kFS/187-Js-logo-logos-512.png"
+      },
+      {
+        name: "Node JS",
+        icon: "https://i.postimg.cc/cLZBtcLh/1012818-code-development-logo-nodejs-icon.png"
       },
     ],
     Resume: {

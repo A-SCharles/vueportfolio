@@ -8,42 +8,28 @@
           <div
             v-for="skill in Skills"
             :key="skill"
-            class="card mx-auto border-0 bg-transparent p-2 m-2"
+            data-aos="zoom-in" data-aos-duration="3000"
+            class="card m-auto border-0 bg-transparent p-2"
           >
-            <img :src="skill.icon" alt="" />
+            <img :src="skill.icon" alt="" class="img-fluid"/>
             <h4 class="my-1">{{ skill.name }}</h4>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- <div v-if="Skills">
-      <div class="container">
-        <h2 data-aos="fade-down" data-aos-duration="3000">My Skills</h2>
-
-        <div class="row mx-auto">
-          <div
-            v-for="skill in Skills"
-            :key="skill"
-            class="card mx-auto border-0 bg-transparent p-2 m-2"
-          >
-            <img :src="skill.icon" alt="" />
-            <h4 class="my-1">{{ skill.name }}</h4>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-
   </section>
 </template>
 
 <script>
+import AOS from "aos";
 export default {
   computed: {
     Skills() {
       return this.$store.state.skills;
     },
+  },
+  mounted() {
+    AOS.init();
   },
 };
 </script>

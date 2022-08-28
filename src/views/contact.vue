@@ -2,16 +2,16 @@
     <!-- contact start -->
     <section v-if="Me" id="contact" class="text-black py-5">
         <div class="container">
-            <div class="row">
+            <div class="row mx-auto">
                 <h2 data-aos="fade-down" data-aos-duration="3000" class="mb-5 text-center">Looking For Me?</h2>
-                <div class="col-lg-12 my-auto text-center text-lg-start">
+                <div class="col-lg-6 col-md-12 m-auto text-center text-lg-start">
 
 
                     <!-- Contact Form -->
                     <form data-aos="zoom-out" data-aos-duration="3000"
-                        class="form-border p-3 mx-auto w-50 text-md-start" action="https://formspree.io/f/myyolgzn"
+                        class="bg-light form-border p-3 mx-auto text-md-start" action="https://formspree.io/f/myyolgzn"
                         method="post">
-                        <h3 class="text-lg-center">Contact me here</h3>
+                        <h3 class="text-lg-center  text-black">Contact me here</h3>
                         <label class="form-label pt-3" for="name">Name:</label>
                         <input name="name" type="text" class="form-control py-1" placeholder="Enter Your Name" required>
                         <label class="form-label pt-3" for="email">Your Email Address:</label>
