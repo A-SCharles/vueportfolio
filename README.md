@@ -15,5 +15,11 @@ npm run serve
 npm run build
 ```
 
+
+### Live site
+```
+https://vue-portfolio-f6f4c.web.app
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
