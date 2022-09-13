@@ -75,7 +75,7 @@
         </div>
 
         <div v-if="Projects">
-        <div class="row mx-auto">
+        <div class="row mx-auto py-5">
             <Projects
               v-for="project in Projects"
               :key="project"

@@ -1,11 +1,18 @@
 <template>
   <!-- <div v-if="projects"> -->
-  <div data-aos="zoom-in" data-aos-duration="3000" class="card mx-auto m-3">
-    <img :src="project.img" class="img-fluid my-auto" />
+  <div data-aos="zoom-in" data-aos-duration="3000" class="card mx-auto my-5">
+    <img :src="project.img" class="img-fluid my-auto"/>
     <div
       class="btn-center d-flex justify-content-center align-content-center flex-column"
     >
-      <h5 class="card-title">{{ project.name }}</h5>
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-warning w-50 mx-auto" data-bs-toggle="modal" :data-bs-target="'#projectModal' + project.id">
+        View Project Details
+    </button>
+
+      <!-- <h5 class="card-title">{{ project.name }}</h5>
       <div>
         <a
           :href="project.github"
@@ -22,26 +29,28 @@
       </div>
       
       <p>{{project.desc}}</p>
-      <!-- <div class=""> -->
-      <p>{{ project.category }}</p>
-      <!-- </div> -->
+      <p>{{ project.category }}</p> -->
+
     </div>
   </div>
   <!-- </div> -->
+  <ProjectModal :project="project"/>
 </template>
 
 <script>
 import AOS from "aos";
+import ProjectModal from "./projectModal.vue";
 export default {
-  props: ["project"],
-  computed: {
+    props: ["project"],
+    computed: {
     // projects() {
     //     return this.$store.state.projects
     // }
-  },
-  mounted() {
-    AOS.init();
-  },
+    },
+    mounted() {
+        AOS.init();
+    },
+    components: { ProjectModal }
 };
 </script>
 
@@ -51,7 +60,7 @@ export default {
 }
 
 .card {
-  /* width: 350px; */
+  width: 350px;
   height: 100%;
   transition: 0.8s;
   color: white;
@@ -61,7 +70,7 @@ export default {
 }
 
 .card img {
-  /* object-fit: cover; */
+  object-fit: cover;
   width: 100% !important;
   transition: 0.8s;
   background-color: black;

@@ -52,6 +52,7 @@ export default createStore({
       },
     ],
     projects: [{
+      id:1,
         name: "My First Digital Portfolio",
         desc: "The first ever digital portfolio I created.",
         img: "https://i.postimg.cc/9Fwvm3Gp/firstport.png",
@@ -60,6 +61,7 @@ export default createStore({
         category: "HTML / CSS"
       },
       {
+        id : 2,
         name: "Auto Shop Landing Page",
         desc: "An example of a landing page for an auto shop.",
         img: "https://i.postimg.cc/wMC4yvhk/prodland.png",
@@ -68,6 +70,7 @@ export default createStore({
         category: "HTML / CSS"
       },
       {
+        id : 3,
         name: "PC Technical Document",
         desc: "A Technical Document on how to build a PC",
         img: "https://i.postimg.cc/7YCy5JyS/fcctech.png",
@@ -76,6 +79,7 @@ export default createStore({
         category: "HTML / CSS"
       },
       {
+        id : 4,
         name: "Property Listing Website",
         desc: "A website where a user is able to view properties",
         img: "https://i.postimg.cc/zGHGBWbX/image-3.png",
@@ -84,6 +88,7 @@ export default createStore({
         category: "Vue"
       },
       {
+        id : 5,
         name: "To Do list",
         desc: "A to do list web application",
         img: "https://i.postimg.cc/26rk2KHV/image.png",
@@ -92,6 +97,7 @@ export default createStore({
         category: "Javascript"
       },
       {
+        id : 6,
         name: "Random User Generator",
         desc: "A web app that generates random users via an API",
         img: "https://i.postimg.cc/769xcncX/image-2.png",
@@ -100,6 +106,7 @@ export default createStore({
         category: "Javascript"
       },
       {
+        id : 7,
         name: "Javascript Calculator",
         desc: "A normal calculator built using JAvascript",
         img: "https://i.postimg.cc/8C8Pr5Md/image-1.png",
@@ -108,6 +115,7 @@ export default createStore({
         category: "Javascript"
       },
       {
+        id : 8,
         name: "Unholy Season",
         desc: "A site where you can view horror animes",
         img: "https://i.postimg.cc/Hk5jm0t0/image.png",
@@ -116,6 +124,7 @@ export default createStore({
         category: "Vue"
       },
       {
+        id : 9,
         name: "Go Figure",
         desc: "A collabarative anime merch website.",
         img: "https://i.postimg.cc/8kHVVCxV/image-1.png",
@@ -124,6 +133,7 @@ export default createStore({
         category: "Vue"
       },
       {
+        id : 10,
         name: "Charles Autos",
         desc: "CAPSTONE Project",
         img: "https://i.postimg.cc/x8YY3J76/image.png",
