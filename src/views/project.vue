@@ -75,7 +75,7 @@
         </div>
 
         <div v-if="Projects">
-        <div class="row mx-auto py-5">
+          <div class="row mx-auto py-5">
             <Projects
               v-for="project in Projects"
               :key="project"
@@ -99,9 +99,6 @@ export default {
     };
   },
   computed: {
-    // Projects() {
-    //   return this.$store.state.projects;
-    // },
     Projects() {
       return this.$store.state.projects?.filter((project) => {
         let isMatch = true;
@@ -115,19 +112,6 @@ export default {
   mounted() {
     AOS.init();
   },
-  //   methods: {
-  //     javascript() {
-  //       let js = document.getElementById("Javascript").value;
-  //       return this.$store.state.projects?.filter((product) => {
-  //         let isMatch = true;
-
-  //         if (js !== product.category) {
-  //           isMatch = false;
-  //         }
-  //         return isMatch;
-  //       });
-  //     },
-  //   },
 };
 </script>
 
