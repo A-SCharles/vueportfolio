@@ -115,6 +115,22 @@ export default createStore({
         live: "https://unholyseason-3ff41.web.app/",
         category: "Vue"
       },
+      {
+        name: "Go Figure",
+        desc: "A collabarative anime merch website.",
+        img: "https://i.postimg.cc/8kHVVCxV/image-1.png",
+        github: "https://github.com/DanielJamesF/GoFigure",
+        live: "https://gofigure-b695c.web.app",
+        category: "Vue"
+      },
+      {
+        name: "Charles Autos",
+        desc: "CAPSTONE Project",
+        img: "https://i.postimg.cc/x8YY3J76/image.png",
+        github: "https://github.com/A-SCharles/Charles_Autos",
+        live: "http://charlesautos-d58ac.web.app/",
+        category: "Vue"
+      },
     ],
     skills: [{
         name: "HTML",

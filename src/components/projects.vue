@@ -51,7 +51,8 @@ export default {
 }
 
 .card {
-  width: 350px;
+  /* width: 350px; */
+  height: 100%;
   transition: 0.8s;
   color: white;
   position: relative;
