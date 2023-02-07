@@ -1,56 +1,34 @@
 <template>
   <!-- <div v-if="projects"> -->
-  <div data-aos="zoom-in" data-aos-duration="3000" class="card mx-auto my-5">
-    <img :src="project.img" class="img-fluid my-auto"/>
-    <div
-      class="btn-center d-flex justify-content-center align-content-center flex-column"
-    >
-
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-outline-warning w-50 mx-auto" data-bs-toggle="modal" :data-bs-target="'#projectModal' + project.id">
+  <div data-aos="zoom-in" data-aos-duration="1000" class="card mx-auto my-5">
+    <img :src="project.img" class="img-fluid my-auto" />
+    <div class="btn-center d-flex justify-content-center align-content-center flex-column">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-outline-warning w-50 mx-auto" data-bs-toggle="modal"
+        :data-bs-target="'#projectModal' + project.id">
         View Project Details
-    </button>
-
-      <!-- <h5 class="card-title">{{ project.name }}</h5>
-      <div>
-        <a
-          :href="project.github"
-          target="_blank"
-          class="btn btn-outline-warning m-3"
-          >Github</a
-          >
-        <a
-        :href="project.live"
-        target="_blank"
-        class="btn btn-outline-warning m-3"
-        >Live</a
-        >
-      </div>
-      
-      <p>{{project.desc}}</p>
-      <p>{{ project.category }}</p> -->
+      </button>
 
     </div>
   </div>
   <!-- </div> -->
-  <ProjectModal :project="project"/>
+  <ProjectModal :project="project" />
 </template>
 
 <script>
 import AOS from "aos";
 import ProjectModal from "./projectModal.vue";
 export default {
-    props: ["project"],
-    computed: {
+  props: ["project"],
+  computed: {
     // projects() {
     //     return this.$store.state.projects
     // }
-    },
-    mounted() {
-        AOS.init();
-    },
-    components: { ProjectModal }
+  },
+  mounted() {
+    AOS.init();
+  },
+  components: { ProjectModal }
 };
 </script>
 
@@ -88,7 +66,7 @@ export default {
   opacity: 0;
 }
 
-.card:hover > :not(.btn-center) {
+.card:hover> :not(.btn-center) {
   filter: blur(7px) grayscale(100) opacity(0.4);
 }
 

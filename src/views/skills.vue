@@ -1,15 +1,15 @@
 <template>
   <section id="skills">
     <div v-if="Skills">
-      <div class="container">
-        <h2 data-aos="fade-down" data-aos-duration="3000">My Skills</h2>
+      <div class="container pt-5">
+        <h2 data-aos="fade-down" data-aos-duration="1000">My Skills</h2>
 
         <div class="row mx-auto">
           <div
             v-for="skill in Skills"
             :key="skill"
-            data-aos="zoom-in" data-aos-duration="3000"
-            class="card m-auto border-0 bg-transparent p-2"
+            data-aos="zoom-in" data-aos-duration="1000"
+            class="card m-auto border-0 bg-transparent p-3"
           >
             <img :src="skill.icon" alt="" class="img-fluid"/>
             <h4 class="my-1">{{ skill.name }}</h4>
@@ -41,20 +41,29 @@ export default {
 }
 
 .card {
-    width: 300px;
-    transition: 0.8s;
+    width: 250px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 30%;
+} 
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    width: 50%;
+} 
 }
 
 .card img {
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
+
 }
 
 .card:hover {
-    box-shadow: #007991 5px 5px 60px 1px;
-}
-
-.card:hover img{
-    filter: brightness(1);
+  box-shadow: 15px 15px 50px rgb(0 0 0 / 80%);
 }
 
 </style>

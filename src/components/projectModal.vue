@@ -2,7 +2,7 @@
   <!-- Modal -->
   <div class="modal fade" :id="'projectModal' + project.id" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered mx-auto modal-lg mx-3">
-      <div class="modal-content">
+      <div class="modal-content bg-dark text-white">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">{{ project.name }}</h5>
           <button
@@ -12,50 +12,6 @@
             aria-label="Close"
           ></button>
         </div>
-        <!-- <div class="modal-body">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mb-3">
-                <img
-                  id="modalimg"
-                  :src="project.img"
-                  class="img-fluid text-center"
-                />
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="mb-3 text-start">
-                <label class="form-label">Project Description :</label>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Iure, natus.
-                </p>
-              </div>
-
-              <div class="mb-3 text-start">
-                <label class="form-label">Technologies used :</label>
-                <ul>
-                  <li>{{ project.category }}</li>
-                </ul>
-              </div>
-
-              <div class="mb-3 text-start">
-                <label class="form-label">Github Link :</label>
-                <a :href="project.github"
-                  ><i class="fa fa-github-square" aria-hidden="true"></i
-                ></a>
-              </div>
-
-              <div class="mb-3 text-start">
-                <label class="form-label"> Live Link :</label>
-                <a :href="project.live"
-                  ><i class="fa fa-link" aria-hidden="true"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
 
         <div class="modal-body">
           <div class="row">
@@ -146,5 +102,9 @@ p {
 
 li {
     font-size: large;
+}
+
+.fa {
+  color: white;
 }
 </style>

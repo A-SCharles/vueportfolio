@@ -1,6 +1,6 @@
 <template>
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container">
             <div class=" d-flex align-content-center">
                 <a class="navbar-brand fw-bold" href="#landing">
@@ -14,7 +14,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link text-white" href="#landing">Home</a>
+                    <a class="nav-link text-white"  href="#landing">Home</a>
 
                     <!-- DROPDOWN  -->
                     <li class="nav-item dropdown">
@@ -24,7 +24,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                            <li><a class="dropdown-item" href="#about">About</a></li>
+                            <!-- <li><a class="dropdown-item" href="#about">About</a></li> -->
                             <li><a class="dropdown-item" href="#skills">Skills</a></li>
                             <li><a class="dropdown-item" href="#testimonial">Testimonials</a></li>
                             <li><a class="dropdown-item" href="#project">Projects</a></li>
@@ -48,8 +48,7 @@ export default {
 
 <style scoped>
 nav {
-    /* background-color: #222e50; */
-    background-image: linear-gradient(#222e50, #00799178, #e9d88500);
+
 }
 
 

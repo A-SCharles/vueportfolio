@@ -40,8 +40,9 @@ export default {
 <style>
 :root {
   --space_cadet: #222e50;
-  --teal_blue: #007991;
-  --flax: #e9d985;
+  --flax: #274156;
+  --teal_blue: #212529;
+  --lightblue: #46a7ff;
 }
 
 *{ 
@@ -51,12 +52,14 @@ export default {
 
 body {
   /* background-image: linear-gradient(180deg, var(--teal_blue, var(--space_cadet, var(--flax)))) !important; */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     180deg,
-    #222e50,
-    #007991,
-    #e9d985
-  ) !important;
+    var(--space_cadet),
+    var(--flax),
+    var(--teal_blue)
+  ) !important; */
+  background-color: #44484c;
+  /* background-color: white; */
     overflow-x: hidden !important;
     /* overflow-y: auto !important; */
 }
@@ -79,4 +82,5 @@ nav a {
   font-weight: bold;
   color: #2c3e50;
 }
+
 </style>

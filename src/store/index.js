@@ -8,7 +8,7 @@ export default createStore({
       name: "Abdus-Samad Charles",
       headshot: "https://i.postimg.cc/zXh8dSTG/Charles4.jpg",
       logo: "https://i.postimg.cc/x8w6tG9m/navLogo.png",
-      about: "I am an honest, hard-working, punctual, reliable, patient and confident person with good leadership skills. I am also a good team player.I studied IT at College of Cape-Town for 3 years, I completed the course in 2021, I have a responsive web design certification which can be viewed here. Prior to my IT NCV level 4 certification, I completed the memorization of the Qur'an after 4 years at Madrasatun'Nur, I also have a Level 2 mechanical engineering certification. At a young age I've always been passionate about breaking things and putting them back together, I do not know why, It was just exciting to me. When I first started, I had no idea how to program or do anything technical, but because of my excellent teachers I slowly started to learn how to do it, I became good at it and began to develop a passion for it. Now I find myself eager to learn more about the vast world of Software Development. While studying IT at the College of Cape Town, I found my passion for the tech industry.",
+      about: "I am an honest, hard-working and confident person with good leadership skills. At a young age I've always been passionate about breaking things and putting them back together. When I first started, I had no idea how to program or do anything technical, but because of my excellent teachers I slowly started to learn how to do it, I became good at it and began to develop a passion for it. Now I find myself eager to learn more about the vast world of Software Development. While studying IT at the College of Cape Town, I found my passion for the tech industry.",
       email: "a.charles.edu@gmail.com",
       cell: "074 269 5595",
       location: "Cape Town, South Africa"
@@ -108,7 +108,7 @@ export default createStore({
       {
         id : 7,
         name: "Javascript Calculator",
-        desc: "A normal calculator built using JAvascript",
+        desc: "A normal calculator built using Javascript",
         img: "https://i.postimg.cc/8C8Pr5Md/image-1.png",
         github: "https://github.com/A-SCharles/JS_Calc",
         live: "https://asc-calculator.netlify.app",
@@ -172,9 +172,6 @@ export default createStore({
       },
       {
         name: "MySQL",
-        // icon: "https://i.postimg.cc/rFqDSZ5D/logo-mysql-26353.png"
-        // icon: "https://i.postimg.cc/rFqDSZ5D/logo-mysql-26353.png"
-        // icon: "https://i.postimg.cc/TwHW1d5n/My-SQL-512.png"
         icon: "https://i.postimg.cc/NMwZ6pPn/1012821-code-development-logo-mysql-icon.png"
       },
       {
@@ -185,13 +182,24 @@ export default createStore({
         name: "Node JS",
         icon: "https://i.postimg.cc/cLZBtcLh/1012818-code-development-logo-nodejs-icon.png"
       },
+      {
+        name: "WordPress",
+        icon: "https://i.postimg.cc/xCJTmKGR/1200px-Word-Press-blue-logo-svg.png"
+      },
     ],
     Resume: {
-      education: [{
+      education: [
+        {
+          name: "Search Engine Optimization",
+          place: "Grizzly New Marketing",
+          link: "https://www.grizzlymarketing.com",
+          duration: "September - December 2022"
+        },
+        {
           name: "Life Choices Coding Academy",
           place: "Life Choices Academy",
           link: "https://www.lifechoices.co.za/academy",
-          duration: "2022 - Current"
+          duration: "March - September 2022"
         },
         {
           name: "Information Technology NCV4",

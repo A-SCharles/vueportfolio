@@ -36,15 +36,15 @@ export default {
 
 <style scoped>
 #landing {
-  /* background-image: url("https://i.postimg.cc/ydBzSBRF/lubo-minar-B-gb-8fgmz8-unsplash.jpg"); */
-  background-image: url("https://i.postimg.cc/Jht41Ks9/Abstract-blue-wave-on-transparent-background-PNG.png");
+  background-image: url("https://i.postimg.cc/ydBzSBRF/lubo-minar-B-gb-8fgmz8-unsplash.jpg");
+  /* background-image: url("https://i.postimg.cc/Jht41Ks9/Abstract-blue-wave-on-transparent-background-PNG.png"); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: (50, 10);
   scroll-margin: 100px;
   overflow-x: hidden;
-
+  
 }
 
 #landing h1 {
@@ -52,7 +52,7 @@ export default {
 }
 
 .bg {
-  background-image:radial-gradient(#222e50, transparent) ;
+  background-image:radial-gradient(#373b3e, transparent) ;
   padding: 5px;
   border-radius: 10px;
 }

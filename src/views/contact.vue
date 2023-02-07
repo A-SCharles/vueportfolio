@@ -3,15 +3,15 @@
     <section v-if="Me" id="contact" class="text-black py-5">
         <div class="container">
             <div class="row mx-auto">
-                <h2 data-aos="fade-down" data-aos-duration="3000" class="mb-5 text-center">Looking For Me?</h2>
+                <h2 data-aos="fade-down" data-aos-duration="1000" class="mb-5 text-center">Looking For Me?</h2>
                 <div class="col-lg-6 col-md-12 m-auto text-center text-lg-start">
 
 
                     <!-- Contact Form -->
-                    <form data-aos="zoom-out" data-aos-duration="3000"
-                        class="bg-light form-border p-3 mx-auto text-md-start" action="https://formspree.io/f/myyolgzn"
+                    <form data-aos="zoom-out" data-aos-duration="1000"
+                        class="bg-dark text-light form-border p-3 mx-auto text-md-start" action="https://formspree.io/f/myyolgzn"
                         method="post">
-                        <h3 class="text-lg-center  text-black">Contact me here</h3>
+                        <h3 class="text-lg-center  text-light">Contact me here</h3>
                         <label class="form-label pt-3" for="name">Name:</label>
                         <input name="name" type="text" class="form-control py-1" placeholder="Enter Your Name" required>
                         <label class="form-label pt-3" for="email">Your Email Address:</label>
@@ -20,7 +20,7 @@
                         <label class="form-label pt-3" for="form-message">How can I Help you?:</label>
                         <textarea name="form-message" class="form-control py-1" rows="4" placeholder="Enter a message"
                             required></textarea>
-                        <button class="btn btn-outline-dark rounded-3 my-4" type="submit">Send</button>
+                        <button class="btn btn-outline-light rounded-3 my-4" type="submit">Send</button>
                     </form>
                     <!-- Contact Form end -->
                 </div>
