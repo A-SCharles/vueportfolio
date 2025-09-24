@@ -42,7 +42,7 @@ export default {
 
 .card {
     width: 250px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 @media screen and (max-width: 768px) {

@@ -5,7 +5,7 @@
         <div class="col-md-12 order-last my-auto text-center">
           <div class="bg">
             <h1 class="display-3" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500">Hello, I am {{ Me.name }}</h1>
-          <h3 data-aos="zoom-in" data-aos-duration="3000"><i>An aspiring full stack developer</i></h3>
+          <h3 data-aos="zoom-in" data-aos-duration="3000"><i>An SEO Specialist & Web developer</i></h3>
           <a data-aos="fade-right" data-aos-duration="3000" href="#project" class="btn btn-outline-light mx-2">View my
             work</a>
           <a data-aos="fade-left" data-aos-duration="3000" href="#contact" class="btn btn-outline-light mx-2">Contact

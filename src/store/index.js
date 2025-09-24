@@ -216,16 +216,22 @@ export default createStore({
       ],
       experience: [
         {
-          position: "Buffet Waiter",
-          place: "La Qualité Catering",
-          link: "https://web.facebook.com/darulislamhall",
-          duration: "2018 - 2020"        
+          position: "Junior SEO Web Developer",
+          place: "Grizzly New Marketing",
+          link: "https://www.grizzlymarketing.com/",
+          duration: "2023 - 2025"        
       },
         {
-          position: "Buffet Waiter",
-          place: "Ashura's Catering",
-          link: "https://web.facebook.com/ashuracaterers/",
-          duration: "2018 - 2019"        
+          position: "Technical SEO Specialist, SEO Consultant",
+          place: "B2B-AI",
+          link: "https://www.b2bemailmarketingagency.com",
+          duration: "2025 -  Current"        
+      },
+        {
+          position: "SEO Specialist, Content Strategy Marketer",
+          place: "Funding Agent",
+          link: "https://www.fundingagent.co.uk/",
+          duration: "2025 -  Current"        
       },
     ]
     },
