@@ -57,11 +57,6 @@ export default {
 } 
 }
 
-.card img {
-    /* filter: grayscale(1); */
-
-}
-
 .card:hover {
   box-shadow: 15px 15px 50px rgb(0 0 0 / 80%);
 }
